@@ -316,6 +316,15 @@
     color: #650300;
 }
 
+.recommend-list h4{
+    padding: 0px 16px 0px 16px;
+    font-weight: 500;
+}
+
+.recommend-list p{
+    font-weight: 400;
+}
+
 .recommend-list li{
     height: 513px;
     border: 1px solid #DEE2E6;
