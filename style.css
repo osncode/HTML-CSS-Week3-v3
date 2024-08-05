@@ -13,6 +13,7 @@
     --bg-light: #FBF2F2;
 }
 
+
 /* background */
 .bg-nav{
     background: var(--primary);
@@ -45,6 +46,11 @@
 .nav-list li{
     text-align: center;
     font-size: 20px;
+    transition: 0.5s;
+}
+
+.nav-list li:hover{
+    font-weight: bold;
 }
 
 @media (max-width:787px){
@@ -98,6 +104,10 @@
 .title-header a{
     background: #AA0601;
     padding: 6px 12px;
+    transition: 0.5s;
+}
+.title-header a:hover{
+    font-weight: bold;
 }
 
 @media (max-width:992px){
@@ -366,4 +376,151 @@
             }
         }
     }
+}
+
+/* contact */
+.bg-contact{
+    background: var(--bg-light);
+}
+
+.contact{
+    padding: 80px 0px 80px 0px;
+}
+
+.title-contact h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 48px;
+}
+
+.contact-container{
+    max-width: 708px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contact-list p{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.d-block input, .d-block textarea{
+    background-color: transparent;
+    border: 1px solid #000;
+    margin: 8px 0px 16px 0px;
+    width: 100%;
+}
+
+.d-block input{
+    height: 36px;
+}
+
+.d-block input::placeholder, .d-block textarea::placeholder{
+    opacity: 0.2;
+    padding: 6px 0px 6px 12px;
+}
+
+
+.checkbox input[type="checkbox"]{
+    display: none;
+}
+
+
+.checkbox input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/ic_check_box_outline_blank_24px.svg");
+    background-size: contain;
+    margin-right: 4px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before{
+    background-image: url("img/ic_check_box_ok.svg");
+  }
+
+.submit input{
+    margin-top: 48px;
+    background: var(--primary);
+    color: #FFF;
+    width: 416px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.submit input:hover{
+    font-weight: bold;
+}
+
+.contact-list .submit{
+    text-align: center;
+}
+/* footer */
+.bg-footer{
+    background: var(--primary);
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.footer-list-link li{
+    margin-right: 48px;
+    transition: 0.5s;
+}
+
+.footer-list-link li:hover{
+    font-weight: bold;
+}
+
+.footer-list-social-link img{
+    width: 48px;
+    height: 48px;
+    margin-left: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer-list-social-link img:hover{
+    transform: scale(1.1);
+}
+
+.footer-list-contact{
+    margin-top: 45px;
+}
+
+.footer-list-contact img{
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+}
+
+.footer-list-contact li{
+    font-size: 36px;
+    color: #FFF;
+}
+
+.footer-list-hr{
+    margin: 32px 0px 32px 0px;
+}
+
+.footer-list-copyright p{
+    color: #FFF;
+}
+
+.footer-list-copyright li{
+    margin-left: 48px;
+    font-size: 14px;
+}
+
+.footer-list-copyright li:hover{
+    font-weight: bold;
 }

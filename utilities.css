@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.d-block{
+    display: block;
+}
+
 .flex-column{
     flex-direction: column;
 }
@@ -93,6 +97,10 @@
 
 .mt-auto{
     margin-top: auto;
+}
+
+.mb-8{
+    margin-bottom: 8px;
 }
 
 .mb-48{
