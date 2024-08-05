@@ -13,7 +13,6 @@
     --bg-light: #FBF2F2;
 }
 
-
 /* background */
 .bg-nav{
     background: var(--primary);
@@ -35,7 +34,6 @@
 .nav a{
     padding: 12px;
 }
-
 
 .nav-img{
     /* width 有加上 col 的 padding 左右 px */
@@ -235,6 +233,10 @@
         }
         .col-4{
             width: 100%;
+            img{
+                width: 336px;
+                height: 336px;
+            }
         }
     }
 }
@@ -381,6 +383,7 @@
 /* contact */
 .bg-contact{
     background: var(--bg-light);
+    text-align: center;
 }
 
 .contact{
@@ -465,6 +468,16 @@
 .contact-list .submit{
     text-align: center;
 }
+
+@media (max-width:992px){
+    .contact-container{
+        max-width: 720px;
+    }
+    .contact-content{
+        max-width: 576px;
+    }
+}
+
 /* footer */
 .bg-footer{
     background: var(--primary);
@@ -523,4 +536,55 @@
 
 .footer-list-copyright li:hover{
     font-weight: bold;
+}
+
+@media (max-width:992px){
+    .footer {
+        .container{
+            max-width: 720px;
+        }
+        .footer-list-social-link img{
+            margin-left: 16px;
+        }
+        .footer-list-link li{
+            margin-right: 16px;
+            margin-top: 10px;
+        }
+        .footer-list-contact li{
+            font-size: 24px;
+        }
+    }
+
+}
+
+@media (max-width:576px){
+    footer {
+        .container{
+        max-width: 372px;
+        }
+        .footer-list-link{
+            display: none;
+        }
+        .footer-list-contact{
+            margin-top: 0px;
+            a{
+                font-size: 16px;
+            }
+            ul{
+                width: 50%;
+            }
+            img{
+                margin-right: 8px;
+            }
+        }
+        .footer-list-copyright{
+            flex-direction: column;
+            ul{
+                flex-direction: column;
+            }
+            li{
+                margin: 8px 0px 0px 0px;
+            }
+        }
+    }
 }
